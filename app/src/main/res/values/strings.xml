@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MoneditApp</string>
+    <string name="welcome">Bienvenido a tu Control Financiero</string>
+
 </resources>
