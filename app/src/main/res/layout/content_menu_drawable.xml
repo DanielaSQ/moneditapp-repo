@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="appmovil.moneditapp.Drawable"
+    tools:showIn="@layout/app_bar_menu_drawable">
+
+    <ImageView
+        android:id="@+id/img_mas"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="99dp"
+        android:layout_marginTop="35dp"
+        android:contentDescription="@android:string/VideoView_error_button"
+        app:srcCompat="@drawable/agregar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <ImageView
+        android:id="@+id/imgmenos"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/img_mas"
+        android:layout_marginStart="79dp"
+        android:contentDescription="menoss"
+        android:src="@drawable/quitar" />
+
+    <TextView
+        android:id="@+id/txt_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_cat"
+        android:layout_below="@+id/imgmenos"
+        android:layout_marginTop="54dp"
+        android:text="@string/ingresos"
+        android:textAlignment="center"
+        android:textColor="@color/colorPurpura"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ed_s"
+        android:layout_width="@android:dimen/thumbnail_height"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_t"
+        android:layout_alignBottom="@+id/txt_t"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/txt_t"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txt_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_t"
+        android:layout_below="@+id/ed_s"
+        android:layout_marginTop="24dp"
+        android:text="@string/gastos"
+        android:textAlignment="center"
+        android:textColor="@color/colorPurpura"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ed_g"
+        android:layout_width="@android:dimen/thumbnail_height"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_g"
+        android:layout_alignBottom="@+id/txt_g"
+        android:layout_alignStart="@+id/ed_s"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txt_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imgmenos"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="22dp"
+        android:text="@string/categoria"
+        android:textAlignment="center"
+        android:textColor="@color/colorPurpura"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/b_ropa"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txt_cat"
+        android:layout_marginTop="17dp"
+        android:layout_toStartOf="@+id/ed_g"
+        android:text="@string/ropa"
+        android:textColor="@color/colorPurpura" />
+
+    <EditText
+        android:id="@+id/ed_r"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/b_ropa"
+        android:layout_alignBottom="@+id/b_ropa"
+        android:layout_alignEnd="@+id/ed_g"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/b_vivi"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/txt_g"
+        android:layout_below="@+id/b_ropa"
+        android:layout_marginTop="17dp"
+        android:text="@string/vivienda"
+        android:textColor="@color/colorPurpura" />
+
+    <EditText
+        android:id="@+id/ed_v"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/b_vivi"
+        android:layout_alignBottom="@+id/b_vivi"
+        android:layout_alignStart="@+id/ed_r"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txt_bal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/b_ropa"
+        android:layout_below="@+id/b_vivi"
+        android:layout_marginTop="50dp"
+        android:text="@string/balance"
+        android:textAlignment="center"
+        android:textColor="@color/colorPurpura"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ed_b"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/txt_bal"
+        android:layout_alignBottom="@+id/txt_bal"
+        android:layout_alignStart="@+id/ed_v"
+        android:ems="10"
+        android:inputType="number" />
+
+
+</RelativeLayout>

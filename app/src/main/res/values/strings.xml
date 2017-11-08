@@ -1,5 +1,31 @@
 <resources>
     <string name="app_name">MoneditApp</string>
     <string name="welcome">Bienvenido a tu Control Financiero</string>
+    <string name="boton_iniciar">Iniciar Sesion</string>
+    <string name="boton_registrar">Registrarse</string>
+    <string name="iniciar">Iniciar Sesión</string>
+    <string name="name_usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="mensaje">Inicia Sesión con :</string>
+    <string name="boton_aceptar">INICIAR</string>
+    <string name="registro">Registrarse</string>
+    <string name="correo">Email</string>
+    <string name="repetir">Repita</string>
+    <string name="title_activity_menu_drawable">MenuDrawable</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="ingresos">Ingresos Totales</string>
+    <string name="gastos">Gastos Totales</string>
+    <string name="categoria">Categorias :</string>
+    <string name="ropa">Ropa</string>
+    <string name="vivienda">Vivienda</string>
+    <string name="balance">Balance</string>
+    <string name="elgir">Elige Categoria</string>
+    <string name="gast">Apunta Ingresos</string>
+    <string name="gasap">Apunta Gastos</string>
+
+    <string name="action_settings">Settings</string>
+
 
 </resources>

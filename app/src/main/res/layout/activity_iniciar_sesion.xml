@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bou"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="appmovil.moneditapp.IniciarSesion">
+
+    <TextView
+        android:id="@+id/txt_Sesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="@string/iniciar"
+        android:textAlignment="center"
+        android:textColor="@color/colorPurpura"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_Sesion"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="69dp"
+        android:text="@string/name_usuario"
+        android:textColor="@color/colorPurpura"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_user"
+        android:layout_alignBottom="@+id/txt_user"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/txt_user"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:labelFor="@+id/edit_name" />
+
+    <TextView
+        android:id="@+id/txt_contra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_user"
+        android:layout_below="@+id/edit_name"
+        android:layout_marginTop="58dp"
+        android:text="@string/contraseña"
+        android:textColor="@color/colorPurpura"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_mensaje"
+        android:layout_toEndOf="@+id/txt_contra"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:labelFor="@+id/edit_pass" />
+
+    <TextView
+        android:id="@+id/txt_mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_contra"
+        android:layout_below="@+id/txt_contra"
+        android:layout_marginTop="28dp"
+        android:text="@string/mensaje"
+        android:textColor="@color/colorPurpura" />
+
+    <ImageView
+        android:id="@+id/img_face"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_alignEnd="@+id/txt_contra"
+        android:layout_below="@+id/txt_mensaje"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/img_goo"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_alignBottom="@+id/img_face"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/google" />
+
+    <Button
+        android:id="@+id/btn_iniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_goo"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/img_goo"
+        android:text="@string/boton_aceptar"
+        android:textAlignment="center"
+        android:textColor="@color/colorPurpura"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

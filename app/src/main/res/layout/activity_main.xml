@@ -8,7 +8,7 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txt_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -16,29 +16,52 @@
         android:layout_marginTop="84dp"
         android:text="@string/welcome"
         android:textAlignment="center"
-        android:textColor="@android:color/holo_purple"
+        android:textColor="@color/colorPurpura"
         android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txt_nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/txt_welcome"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="69dp"
+        android:layout_marginTop="95dp"
         android:text="@string/app_name"
         android:textAlignment="center"
-        android:textColor="@android:color/holo_purple"
+        android:textColor="@color/colorPurpura"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/img_logo"
         android:layout_width="@android:dimen/app_icon_size"
         android:layout_height="@android:dimen/app_icon_size"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/txt_nombre"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="53dp"
-        app:srcCompat="@drawable/logito" />
+        app:srcCompat="@drawable/alogito" />
+
+
+    <Button
+        android:id="@+id/btn_ini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_welcome"
+        android:layout_below="@+id/img_logo"
+        android:layout_marginTop="73dp"
+        android:text="@string/boton_iniciar"
+        android:textColor="@color/colorPurpura"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_regi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_ini"
+        android:layout_alignEnd="@+id/txt_welcome"
+        android:text="@string/boton_registrar"
+        android:textColor="@color/colorPurpura"
+        android:textStyle="bold" />
 </RelativeLayout>

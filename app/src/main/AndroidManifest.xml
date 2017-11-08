@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".IniciarSesion" />
+        <activity android:name=".RegistrarSesion" />
+        <activity
+            android:name=".Drawable"
+            android:label="@string/title_activity_menu_drawable"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ingresa" />
+        <activity android:name=".gastos" />
     </application>
 
 </manifest>

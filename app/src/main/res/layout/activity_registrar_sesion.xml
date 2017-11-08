@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="appmovil.moneditapp.RegistrarSesion">
+
+
+    <TextView
+        android:id="@+id/txt_Re"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="@string/registro"
+        android:textAlignment="center"
+        android:textColor="@color/colorPurpura"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_ema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_Re"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="58dp"
+        android:text="@string/correo"
+        android:textAlignment="center"
+        android:textColor="@color/colorPurpura"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_ema"
+        android:layout_centerVertical="true"
+        android:text="@string/contraseña"
+        android:textAlignment="center"
+        android:textColor="@color/colorPurpura"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_repit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_pass"
+        android:layout_below="@+id/txt_pass"
+        android:layout_marginTop="58dp"
+        android:text="@string/repetir"
+        android:textColor="@color/colorPurpura"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/e_con"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_repit"
+        android:layout_alignStart="@+id/e_email"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/e_repetir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_repit"
+        android:layout_alignStart="@+id/e_con"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/e_repetir"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="22dp"
+        android:text="@string/registro"
+        android:textColor="@color/colorPurpura"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/e_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_ema"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/txt_pass"
+        android:ems="10"
+        android:inputType="textPersonName" />
+</RelativeLayout>

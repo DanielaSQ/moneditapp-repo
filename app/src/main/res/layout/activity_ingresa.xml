@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="appmovil.moneditapp.ingresa">
+
+
+    <ImageView
+        android:id="@+id/i_pa"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="101dp"
+        android:contentDescription="sueldoo"
+        app:srcCompat="@drawable/sueldo" />
+
+    <EditText
+        android:id="@+id/ed_su"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/i_pa"
+        android:layout_marginEnd="37dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/texto"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ed_su"
+        android:layout_below="@+id/i_pa"
+        android:layout_marginTop="62dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Añadir nota"
+        android:textColor="@color/colorPurpura" />
+
+    <Button
+        android:id="@+id/btn_elige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:text="@string/elgir"
+        android:textColor="@color/colorPurpura" />
+
+    <TextView
+        android:id="@+id/t_apun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/ed_su"
+        android:layout_marginTop="37dp"
+        android:text="@string/gast"
+        android:textColor="@color/colorPurpura"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>
